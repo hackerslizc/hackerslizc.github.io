@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 02326 | Hexo</title>
+  <title>数据结构02331 要点 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/tags/02326/index.html">
+  <meta name="description" content="数据结构要点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构02331 要点">
+<meta property="og:url" content="http://example.com/2021/06/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8402331-%E8%A6%81%E7%82%B9/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数据结构要点">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-22T05:52:58.000Z">
+<meta property="article:modified_time" content="2021-06-22T05:53:54.527Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="自考">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="02331">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -136,36 +143,384 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据结构02331-要点" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数据结构02331 要点
+    </h1>
+  
+
+        
+        <a href="/2021/06/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8402331-%E8%A6%81%E7%82%B9/" class="archive-article-date">
+  	<time datetime="2021-06-22T05:52:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>数据结构 各章要点一<br>第一章<br>概 论<br>数据就是指能够被计算机识别、存储和加工处理的信息的载体。<br>数据元素是数据的基本单位，可以由若干个数据项组成。<br>数据项是具有独立含义的最小标识单位。</p>
+<span id="more"></span>
+<pre><code>数据结构的定义：
+    ·逻辑结构：从逻辑结构上描述数据，独立于计算机。
+    ·线性结构：一对一关系。
+    ·线性结构：多对多关系。
+    ·存储结构：是逻辑结构用计算机语言的实现。
+    ·顺序存储结构：如数组。
+    ·链式存储结构：如链表。
+    ·稠密索引：每个结点都有索引项。
+    ·稀疏索引：每组结点都有索引项。
+    ·散列存储结构：如散列表。
+    ·对数据的操作：定义在逻辑结构上，每种逻辑结构都有一个运算集合。
+    ·常用的有：检索、插入、删除、更新、排序。
+    ·数据类型：是一个值的集合以及在这些值上定义的一组操作的总称。
+    ·原子类型：由语言提供。
+    ·结构类型：由用户借助于描述机制定义，是导出类型。
+抽象数据类型ADT：
+    ·是抽象数据的组织和与之的操作。
+相当于在概念层上描述问题。
+    ·优点是将数据和操作封装在一起实现了信息隐藏。
+    程序设计的实质是对实际问题选择一种好的数据结构，设计一个好的算法。
+</code></pre>
+<p>算法取决于数据结构。<br>        算法是一个良定义的计算过程，以一个或多个值输入，并以一个或多个值输出。<br>        评价算法的好坏的因素：</p>
+<pre><code>    ·算法是正确的；
+
+    ·执行算法的时间；
+
+    ·执行算法的存储空间(主要是辅助存储空间)；
+
+    ·算法易于理解、编码、调试。
+    时间复杂度：是某个算法的时间耗费，它是该算法所求解问题规模n的函数。
+    渐近时间复杂度：是指当问题规模趋向无穷大时，该算法时间复杂度的数量级。
+    评价一个算法的时间性能时，主要标准就是算法的渐近时间复杂度。
+    算法中语句的频度不仅与问题规模有关，还与输入实例中各元素的取值相关。
+    时间复杂度按数量级递增排列依次为：常数阶O(1)、对数阶O(log2n)、线性阶O(n)、线性对数阶O(nlog2n)、平方阶O(n^2)、立方阶O(n^3)、„„k次方阶O(n^k)、指数阶O(2^n)。
+    空间复杂度：是某个算法的空间耗费，它是该算法所求解问题规模n的函数。
+    算法的时间复杂度和空间复杂度合称算法复杂度。
+</code></pre>
+<p> 第二章<br>线性表<br>        线性表是由n≥0个数据元素组成的有限序列。<br>n=0是空表;非空表，只能有一个开始结点，有且只能有一个终端结点。<br>        线性表上定义的基本运算：</p>
+<pre><code>    ·构造空表：Initlist(L)
+    ·求表长：Listlength(L)
+    ·取结点：GetNode(L，i)
+    ·查找：LocateNode(L，x)
+    ·插入：InsertList(L，x，i)
+    ·删除：Delete(L，i)
+    顺序表是按线性表的逻辑结构次序依次存放在一组地址连续的存储单元中。
+</code></pre>
+<p>在存储单元中的各元素的物理位置和逻辑结构中各结点相邻关系是一致的。<br>地址计算：LOCa(i)=LOCa(1)+(i-1)*d;(首地址为1)<br>        在顺序表中实现的基本运算： 单链表运算：</p>
+<pre><code>    ·建立单链表
+    ·头插法：s-&gt;next=head;head=s;生成的顺序与输入顺序相反。
+</code></pre>
+<p>平均时间复杂度均为O(n)。<br>        ·尾插法：head=rear=null;if(head=null) head=s;else r-&gt;next=s;r=s; 平均时间复杂度均为O(n)<br>        ·加头结点的算法：对开始结点的操作无需特殊处理，统一了空表和非空表。<br>        ·查找<br>        ·按序号：与查找位置有关，平均时间复杂度均为O(n)。<br>        ·按值：与输入实例有关，平均时间复杂度均为O(n)。<br>        ·插入运算：p=GetNode(L，i-1);s-&gt;next=p-&gt;next;p-&gt;next=s;平均时间复杂度均为O(n)<br>        ·删除运算：p=GetNode(L，i-1);r=p-&gt;next;p-&gt;next=r-&gt;next;free(r);平均时间复杂度均为O(n)<br>        单循环链表是一种首尾相接的单链表，终端结点的指针域指向开始结点或头结点。<br>链表终止条件是以指针等于头指针或尾指针。<br>        采用单循环链表在实用中多采用尾指针表示单循环链表。<br>优点是查找头指针和尾指针的时间都是O(1)，不用遍历整个链表。<br>        双链表就是双向链表，就是在单链表的每个结点里再增加一个指向其直接前趋的指针域prior，形成两条不同方向的链。<br>由头指针head惟一确定。<br>        双链表也可以头尾相链接构成双(向)循环链表。<br>        双链表上的插入和删除时间复杂度均为O (1)。<br>         ·插入：平均移动结点次数为n/2;平均时间复杂度均为O(n)。<br>        ·删除：平均移动结点次数为(n-1)/2;平均时间复杂度均为O(n)。<br>        线性表的链式存储结构中结点的逻辑次序和物理次序不一定相同，为了能正确表示结点间的逻辑关系，在存储每个结点值的同时，还存储了其后继结点的地址信息(即指针或链)。<br>这两部分信息组成链表中的结点结构。<br> 一个单链表由头指针的名字来命名。<br>  顺序表和链表的比较：</p>
+<pre><code>    ·基于空间：
+
+    ·顺序表的存储空间是静态分配，存储密度为1；
+</code></pre>
+<p>适于线性表事先确定其大小时采用。<br>        ·链表的存储空间是动态分配，存储密度&lt;1；<br>适于线性表长度变化大时采用。<br>        ·基于时间：<br>        ·顺序表是随机存储结构，当线性表的操作主要是查找时，宜采用。<br>        ·以插入和删除操作为主的线性表宜采用链表做存储结构。<br>        ·若插入和删除主要发生在表的首尾两端，则宜采用尾指针表示的单循环链表。<br>第三章<br>栈和队列<br>        栈(Stack)是仅限制在表的一端进行插入和删除运算的线性表，称插入、删除这一端为栈顶，另一端称为栈底。<br>表中无元素时为空栈。<br>栈的修改是按后进先出的原则进行的，我们又称栈为LIFO表(Last In First Out)。<br>通常栈有顺序栈和链栈两种存储结构。<br>        栈的基本运算有六种：<br>         ·构造空栈：InitStack(S)<br>        ·判栈空：StackEmpty(S)<br>        ·判栈满：StackFull(S)<br>        ·进栈：Push(S，x)<br>        ·退栈：Pop(S)<br>        ·取栈顶元素：StackTop(S) 在顺序栈中有“上溢”和“下溢”的现象。<br>        ·“上溢”是栈顶指针指出栈的外面是出错状态。<br>        ·“下溢”可以表示栈为空栈，因此用来作为控制转移的条件。<br>        顺序栈中的基本操作有六种：</p>
+<pre><code>    ·构造空栈
+    ·判栈空
+    ·判栈满
+    ·进栈
+    ·退栈
+    ·取栈顶元素
+    链栈则没有上溢的限制，因此进栈不要判栈满。
+</code></pre>
+<p>链栈不需要在头部附加头结点，只要有链表的头指针就可以了。<br>        链栈中的基本操作有五种：</p>
+<pre><code>    ·构造空栈
+    ·判栈空
+    ·进栈
+    ·退栈
+    ·取栈顶元素  队列(Queue)是一种运算受限的线性表，插入在表的一端进行，而删除在表的另一端进行，允许删除的一端称为队头(front)，允许插入的一端称为队尾(rear) ，队列的操作原则是先进先出的，又称作FIFO表(First In First Out) 
+    .队列也有顺序存储和链式存储两种存储结构。
+    队列的基本运算有六种：
+    ·置空队：InitQueue(Q)
+    ·判队空：QueueEmpty(Q)
+    ·判队满：QueueFull(Q)
+    ·入队：EnQueue(Q，x)
+    ·出队：DeQueue(Q)
+    ·取队头元素：QueueFront(Q)
+    顺序队列的“假上溢”现象：由于头尾指针不断前移，超出向量空间。
+</code></pre>
+<p>这时整个向量空间及队列是空的却产生了“上溢”现象。<br>        为了克服“假上溢”现象引入循环向量的概念，是把向量空间形成一个头尾相接的环形，这时队列称循环队列。<br>        判定循环队列是空还是满，方法有三种：<br>            ·第一种是另设一个布尔变量来判断；<br>            ·第二种是少用一个元素空间，入队时先测试((rear+1)%m = front)? 满：空；<br>            ·第三种就是用一个计数器记录队列中的元素的总数。<br>        队列的链式存储结构称为链队列，一个链队列就是一个操作受限的单链表。<br>为了便于在表尾进行插入(入队)的操作，在表尾增加一个尾指针，一个链队列就由一个头指针和一个尾指针唯一地确定。<br>链队列不存在队满和上溢的问题。<br>在链队列的出队算法中，要注意当原队中只有一个结点时，出队后要同进修改头尾指针并使队列变空。</p>
+<p>第四章 串<br>    串是零个或多个字符组成的有限序列。<br>    ·空串：是指长度为零的串，也就是串中不包含任何字符(结点)。<br>    ·空白串：指串中包含一个或多个空格字符的串。<br>    ·在一个串中任意个连续字符组成的子序列称为该串的子串，包含子串的串就称为主串。<br>    ·子串在主串中的序号就是指子串在主串中首次出现的位置。<br>    ·空串是任意串的子串，任意串是自身的子串。<br>    串分为两种：</p>
+<pre><code>·串常量在程序中只能引用不能改变；
+
+·串变量的值可以改变。
+串的基本运算有：
+
+·求串长strlen(char*s)
+·串复制strcpy(char*to，char*from)
+·串联接strcat(char*to，char*from)
+·串比较charcmp(char*s1，char*s2)
+·字符定位strchr(char*s，charc)。
+串是特殊的线性表(结点是字符)，所以串的存储结构与线性表的存储结构类似。
+串的顺序存储结构简称为顺序串。
+顺序串又可按存储分配的不同分为：
+·静态存储分配：直接用定长的字符数组来定义。 优点是涉及串长的操作速度快，但不适合插入、链接操作。
+·动态存储分配：是在定义串时不分配存储空间，需要使用时按所需串的长度分配存储单元。
+串的链式存储就是用单链表的方式存储串值，串的这种链式存储结构简称为链串。
+链串与单链表的差异只是它的结点数据域为单个字符。
+为了解决“存储密度”低的状况，可以让一个结点存储多个字符，即结点的大小。
+顺序串上子串定位的运算：又称串的“模式匹配”或“串匹配”，是在主串中查找出子串出现的位置。
+</code></pre>
+<p>在串匹配中，将主串称为目标(串)，子串称为模式(串)。<br>这是比较容易理解的，串匹配问题就是找出给定模式串P在给定目标串T中首次出现的有效位移或者是全部有效位移。<br>最坏的情况下时间复杂度是O((n-m+1)m)，假如m与n同阶的话则它是O(n^2)。<br>链串上的子串定位运算位移是结点地址而不是整数<br> 第五章<br>多维数组和广义表<br>        数组一般用顺序存储的方式表示。<br>存储的方式有：</p>
+<pre><code>    ·行优先顺序，也就是把数组逐行依次排列。
+</code></pre>
+<p>PASCAL、C<br>        ·列优先顺序，就是把数组逐列依次排列。<br>FORTRAN<br>        地址的计算方法：</p>
+<pre><code>    ·按行优先顺序排列的数组：LOCa(ij)=LOCa(11)+((i-1)*n+(j-1))*d.
+    ·按列优先顺序排列的数组：LOCa(ij)=LOCa(11)+((j-1)*n+(i-1))*d. 矩阵的压缩存储：为多个相同的非零元素分配一个存储空间;对零元素不分配空间。
+    特殊矩阵的概念：所谓特殊矩阵是指非零元素或零元素分布有一定规律的矩阵。
+    稀疏矩阵的概念：一个矩阵中若其非零元素的个数远远小于零元素的个数，则该矩阵称为稀疏矩阵。
+    特殊矩阵的类型：
+
+    ·对称矩阵：满足a(ij)=a(ji)。
+</code></pre>
+<p>元素总数n(n+1)/2.I=max(i，j)，J=min(i，j)，LOCa(ij)=LOC(sa[0])+(I*(I+1)/2+J)<em>d.<br>        ·三角矩阵：<br>         ·上三角阵：k=i</em>(2n-i+1)/2+j-i，LOCa(ij)=LOC(sa[0])+k<em>d.<br>        ·下三角阵：k=i</em>(i+1)/2+j，LOCa(ij)=LOC(sa[0])+k<em>d.<br>        ·对角矩阵：k=2i+j，LOCa(ij)=LOC(sa[0])+k</em>d.<br>        稀疏矩阵的压缩存储方式用三元组表把非零元素的值和它所在的行号列号做为一个结点存放在一起，用这些结点组成的一个线性表来表示。<br>但这种压缩存储方式将失去随机存储功能。<br>加入行表记录每行的非零元素在三元组表中的起始位置，即带行表的三元组表。<br> 广义表是n(n≥0)个元素的有限序列，其中的元素是原子或者是一个广义表。<br>        广义表表头和表尾的概念：</p>
+<pre><code>    ·若广义表LS非空(n≥1)，则这个广义表的第一个元素就是表头。
+    ·其余的元素组成的表称为LS的表尾，所以表尾必是一个子表。
+    广义表有两种表示法，一种是括号表示法，一种是图形表示法。
+    广义表与树(形结构)相对应，这个广义表就是纯表。
+    如果一个广义表的结点又可以被其他结点所共享，则这个表称为再入表。
+    允许递归的表称为递归表。
+    线性表∈纯表(树)∈再入表∈递归表。
+</code></pre>
+<p>可见，广义表是对线性表和树的推广。<br>        广义表有两个特殊的基本运算：</p>
+<pre><code>    ·取表头head(LS)：取表中的第一个数据元素，不能对空表操作。
+    ·取表尾tail(LS);取除表头外，其余数据元素构成的子表，不能对空表操作。
+</code></pre>
+<p> 第六章 树<br>    树是n个结点的有限集合，非空时必须满足：只有一个称为根的结点；<br>    其余结点形成m个不相交的子集，并称根的子树。<br>    根是开始结点；<br>    结点的子树数称度；<br>    度为0的结点称叶子(终端结点)；<br>    度不为0的结点称分支结点(非终端结点)；<br>    除根外的分支结点称内部结点；</p>
+<pre><code>有序树是子树有左，右之分的树；
+无序树是子树没有左，右之分的树；
+森林是m个互不相交的树的集合；
+    树的四种不同表示方法：
+    ·树形表示法；
+    ·嵌套集合表示法；
+    ·凹入表示法；
+    ·广义表表示法。
+    二叉树的定义：是n≥0个结点的有限集，它是空集(n=0)或由一个根结点及两棵互不相交的分别称作这个根的左子树和右子树的二叉树组成。
+    二叉树不是树的特殊情形，与度数为2的有序树不同。
+    二叉树的4个重要性质：
+
+    ·二叉树上第i层上的结点数目最多为2^(i-1)(i≥1)；
+
+    ·深度为k的二叉树至多有(2^k)-1个结点(k≥1)；
+
+    ·在任意一棵二叉树中，若终端结点的个数为n0，度为2的结点数为n2，则n0=n2+1；
+
+    ·具有n个结点的完全二叉树的深度为int(log2n)+1。
+</code></pre>
+<p>  满二叉树是一棵深度为k，结点数为(2^k)-1的二叉树；<br>完全二叉树是满二叉树在最下层自右向左去处部分结点；</p>
+<pre><code>    二叉树的顺序存储结构就是把二叉树的所有结点按照层次顺序存储到连续的存储单元中。
+</code></pre>
+<p>(存储前先将其画成完全二叉树)<br>        树的存储结构多用的是链式存储。<br>BinTNode的结构为lchild|data|rchild，把所有BinTNode类型的结点，加上一个指向根结点的BinTree型头指针就构成了二叉树的链式存储结构，称为二叉链表。<br>它就是由根指针root唯一确定的。<br>共有2n个指针域，n+1个空指针。<br>        根据访问结点的次序不同可得三种遍历：先序遍历(前序遍历或先根遍历)，中序遍历(或中根遍历)、后序遍历(或后根遍历)。<br>时间复杂度为O(n)。<br>        利用二叉链表中的n+1个空指针域来存放指向某种遍历次序下的前趋结点和后继结点的指针，这些附加的指针就称为“线索”，加上线索的二叉链表就称为线索链表。<br>线索使得查找中序前趋和中序后继变得简单有效，但对于查找指定结点的前序前趋和后序后继并没有什么作用。<br>        树和森林及二叉树的转换是唯一对应的。<br>        转换方法：</p>
+<pre><code>    ·树变二叉树：兄弟相连，保留长子的连线。
+    ·二叉树变树：结点的右孩子与其双亲连。
+    ·森林变二叉树：树变二叉树，各个树的根相连。
+    树的存储结构：
+
+    ·有双亲链表表示法：结点data | parent，对于求指定结点的双亲或祖先十分方便，但不适于求指定结点的孩子及后代。
+    ·孩子链表表示法：为树中每个结点data | next设置一个孩子链表firstchild，并将data | firstchild存放在一个向量中。
+    ·双亲孩子链表表示法：将双亲链表和孩子链表结合。
+    ·孩子兄弟链表表示法：结点结构leftmostchild |data | rightsibing，附加两个分别指向该结点的最左孩子和右邻兄弟的指针域。
+</code></pre>
+<p> 树的前序遍历与相对应的二叉树的前序遍历一致;树的后序遍历与相对应的二叉树的中序遍历一致。<br>        树的带权路径长度是树中所有叶结点的带权路径长度之和。<br>树的带权路径长度最小的二叉树就称为最优二叉树(即哈夫曼树)。<br>        在叶子的权值相同的二叉树中，完全二叉树的路径长度最短。<br>        哈夫曼树有n个叶结点，共有2n-1个结点，没有度为1的结点，这类树又称为严格二叉树。<br>        变长编码技术可以使频度高的字符编码短，而频度低的字符编码长，但是变长编码可能使解码产生二义性。<br>如00、01、0001这三个码无法在解码时确定是哪一个，所以要求在字符编码时任一字符的编码都不是其他字符编码的前缀，这种码称为前缀码(其实是非前缀码)。<br>        哈夫曼树的应用最广泛地是在编码技术上，它能够容易地求出给定字符集及其概率分布的最优前缀码。<br>哈夫曼编码的构造很容易，只要画好了哈夫曼树，按分支情况在左路径上写代码0，右路径上写代码1，然后从上到下到叶结点的相应路径上的代码的序列就是该结点的最优前缀码。<br> 第七章<br>图<br>        图的逻辑结构特征就是其结点(顶点)的前趋和后继的个数都是没有限制的，即任意两个结点之间之间都可能相关。<br>        图GraphG=(V，E)，V是顶点的有穷非空集合，E是顶点偶对的有穷集。<br>        有向图Digraph：每条边有方向；</p>
+<pre><code>    无向图Undigraph：每条边没有方向；
+
+    有向完全图：具有n*(n-1)条边的有向图；
+
+    无向完全图：具有n*(n-1)/2条边的无向图；
+
+    有根图：有一个顶点有路径到达其它顶点的有向图；
+
+    简单路径：是经过顶点不同的路径；
+
+    简单回路：是开始和终端重合的简单路径；
+
+    网络：是带权的图。
+</code></pre>
+<p> 图的存储结构：</p>
+<pre><code>    ·邻接矩阵表示法：用一个n阶方阵来表示图的结构是唯一的，适合稠密图。
+    ·无向图：邻接矩阵是对称的。
+    ·有向图：行是出度，列是入度。
+    建立邻接矩阵算法的时间是O(n+n^2+e)，其时间复杂度为O(n^2)
+    ·邻接表表示法：用顶点表和邻接表构成不是唯一的，适合稀疏图。
+    ·顶点表结构 vertex | firstedge，指针域存放邻接表头指针。
+    ·邻接表：用头指针确定。
+    ·无向图称边表；
+
+    ·有向图又分出边表和逆邻接表；
+
+    ·邻接表结点结构为 adjvex | next，时间复杂度为O(n+e)，空间复杂度为O(n+e)。
+    图的遍历：
+
+    ·深度优先遍历：借助于邻接矩阵的列。
+</code></pre>
+<p>使用栈保存已访问结点。<br>        ·广度优先遍历：借助于邻接矩阵的行。<br>使用队列保存已访问结点。<br>        生成树的定义：若从图的某个顶点出发，可以系统地访问到图中所有顶点，则遍历时经过的边和图的所有顶点所构成的子图称作该图的生成树。<br>        最小生成树：图的生成树不唯一，从不同的顶点出发可得到不同的生成树，把权值最小的生成树称为最小生成树(MST)。<br> 构造最小生成树的算法：</p>
+<pre><code>    ·Prim算法的时间复杂度为O(n^2)与边数无关适于稠密图。
+    ·Kruskal算法的时间复杂度为O(lge)，主要取决于边数，较适合于稀疏图。
+    最短路径的算法：
+
+    ·Dijkstra算法，时间复杂度为O(n^2)。
+    ·类似于prim算法。
+    拓扑排序：是将有向无环图G中所有顶点排成一个线性序列，若∈E(G)，则在线性序列u在v之前，这种线性序列称为拓扑序列。
+    拓扑排序也有两种方法：
+
+    ·无前趋的顶点优先：每次输出一个无前趋的结点并删去此结点及其出边，最后得到的序列即拓扑序列。
+    ·无后继的结点优先：每次输出一个无后继的结点并删去此结点及其入边，最后得到的序列是逆拓扑序列。
+</code></pre>
+<p> 第八章<br>排序<br>        记录中可用某一项来标识一个记录，则称为关键字项，该数据项的值称为关键字。<br>        排序是使文件中的记录按关键字递增(或递减)次序排列起来。<br>        ·基本操作：比较关键字大小；<br>改变指向记录的指针或移动记录。<br>        ·存储结构：顺序结构、链表结构、索引结构。<br> 经过排序后这些具有相同关键字的记录之间的相对次序保持不变，则称这种排序方法是稳定的，否则排序算法是不稳定的。<br>        排序过程中不涉及数据的内、外存交换则称之为“内部排序”(内排序)，反之，若存在数据的内外存交换，则称之为外排序。<br>        内部排序方法可分五类：插入排序、选择排序、交换排序、归并排序和分配排序。<br>        评价排序算法好坏的标准主要有两条：执行时间和所需的辅助空间，另外算法的复杂程序也是要考虑的一个因素。<br>        插入排序：</p>
+<pre><code>    ·直接插入排序；
+
+    ·逐个向前插入到合适位置；
+
+    ·哨兵(监视哨)有两个作用；
+
+    ·作为临变量存放R[i]；
+
+    ·是在查找循环中用来监视下标变量j是否越界；
+
+    ·直接插入排序是就地的稳定排序。
+</code></pre>
+<p>时间复杂度为O(n^2)，比较次数为(n+2)(n-1)/2;移动次数为(n+4)(n-1)/2。<br>        希尔排序：</p>
+<pre><code>    ·等间隔的数据比较并按要求顺序排列，最后间隔为1；
+
+    ·希尔排序是就地的不稳定排序。
+</code></pre>
+<p>时间复杂度为O(n^1.25)，比较次数为(n^1.25)；<br>移动次数为(1.6n^1.25)；</p>
+<pre><code>    交换排序：  冒泡排序：
+
+    ·自下向上确定最轻的一个。
+    ·自上向下确定最重的一个。
+    ·自下向上确定最轻的一个，后自上向下确定最重的一个。
+    ·冒泡排序是就地的稳定排序。
+</code></pre>
+<p>时间复杂度为O(n^2)，比较次数为n(n-1)/2;移动次数为3n(n-1)/2；</p>
+<pre><code>    快速排序：
+
+    ·以第一个元素为参考基准，设定、动两个指针，发生交换后指针交换位置，直到指针重合。
+</code></pre>
+<p>重复直到排序完成。<br>        ·快速排序是非就地的不稳定排序。<br>时间复杂度为O(nlog2n)，比较次数为n(n-1)/2。<br>        选择排序：</p>
+<pre><code>    ·直接选择排序；
+
+    ·选择最小的放在比较区前；
+
+    ·直接选择排序就地的不稳定排序。
+</code></pre>
+<p>时间复杂度为O(n^2)。<br>比较次数为n(n-1)/2。<br>        堆排序<br>        ·建堆：按层次将数据填入完全二叉树，从int(n/2)处向前逐个调整位置。<br>        ·然后将树根与最后一个叶子交换值并断开与树的连接并重建堆，直到全断开。<br>        ·堆排序是就地不稳定的排序，时间复杂度为O(nlog2n)，不适宜于记录数较少的文件。<br> 归并排序：</p>
+<pre><code>    ·先两个一组排序，形成(n+1)/2组，再将两组并一组，直到剩下一组为止。
+    ·归并排序是非就地稳定排序，时间复杂度是O(nlog2n)，
+    分配排序：
+    箱排序：
+
+    ·按关键字的取值范围确定箱子数，按关键字投入箱子，链接所有非空箱。
+    ·箱排序的平均时间复杂度是线性的O(n)。
+    基数排序：
+
+    ·从低位到高位依次对关键字进行箱排序。
+    ·基数排序是非就稳定的排序，时间复杂度是O(d*n+d*rd)。
+    各种排序方法的比较和选择：
+
+    ·待排序的记录数目n；
+</code></pre>
+<p>n较大的要用时间复杂度为O(nlog2n)的排序方法；</p>
+<pre><code>    ·记录的大小(规模)；
+</code></pre>
+<p>记录大最好用链表作为存储结构，而快速排序和堆排序在链表上难于实现；</p>
+<pre><code>    ·关键字的结构及其初始状态；
+
+    ·对稳定性的要求；
+
+    ·语言工具的条件；
+
+    ·存储结构；
+
+    ·时间和辅助空间复杂度。
+</code></pre>
+<p> 第九章<br>查找<br>        查找的同时对表做修改操作(如插入或删除)则相应的表称之为动态查找表，否则称之为静态查找表。<br>        衡量查找算法效率优劣的标准是在查找过程中对关键字需要执行的平均比较次数(即平均查找长度ASL)。<br>        线性表查找的方法：</p>
+<pre><code>    ·顺序查找：逐个查找，ASL=(n+1)/2；
+
+    ·二分查找：取中点int(n/2)比较，若小就比左区间，大就比右区间。
+</code></pre>
+<p>用二叉判定树表示。<br>ASL=(∑(每层结点数*层数))/N；</p>
+<pre><code>    ·分块查找：要求“分块有序”，将表分成若干块内部不一定有序，并抽取各块中的最大关键字及其位置建立有序索引表。
+    二叉排序树(BST)定义是二叉排序树是空树或者满足如下性质的二叉树：
+     ·若它的左子树非空，则左子树上所有结点的值均小于根结点的值；
+
+    ·若它的右子树非空，则右子树上所有结点的值均大于根结点的值；
+
+    ·左、右子树本身又是一棵二叉排序树。
+    二叉排序树的插入、建立、删除的算法平均时间性能是O(nlog2n)。
+    二叉排序树的删除操作可分三种情况进行处理：
+
+    ·*P是叶子，则直接删除*P，即将*P的双亲*parent中指向*P的指针域置空即可。
+    ·*P只有一个孩子*child，此时只需将*child和*p的双亲直接连接就可删去*p。
+    ·*p有两个孩子，则先将*p结点的中序后继结点的数据到*p，删除中序后继结点。
+    关于B-树(多路平衡查找树)。
+</code></pre>
+<p>它适合在磁盘等直接存取设备上组织动态的查找表，是一种外查找算法。<br>建立的方式是从下向上拱起。<br> 散列技术：将结点按其关键字的散列地址存储到散列表的过程称为散列。<br>        散列函数的选择有两条标准：简单和均匀。<br>        常见的散列函数构的造方法：</p>
+<pre><code>    ·平方取中法：hash=int((x^2)%100)
+    ·除余法：表长为m，hash=x%m
+    ·相乘取整法：hash=int(m*(x*A-int(x*A));A=0.618
+    ·随机数法：hash=random(x)。
+    处理冲突的方法：
+    开放定址法： 一般形式为hi=(h(key)+di)%m1≤i≤m-1，开放定址法要求散列表的装填因子α≤1。
+    ·开放定址法类型：
+
+    ·线性探查法：address=(hash(x)+i)%m；
+
+    ·二次探查法：address=(hash(x)+i^2)%m；
+
+    ·双重散列法：address=(hash(x)+i*hash(y))%m；
+
+    ·拉链法： 是将所有关键字为同义词的结点链接在同一个单链表中。
+    ·拉链法的优点：
+
+    ·拉链法处理冲突简单，且无堆积现象；
+
+    ·链表上的结点空间是动态申请的适于无法确定表长的情况；
+
+    ·拉链法中α可以大于1，结点较大时其指针域可忽略，因此节省空间；
+
+    ·拉链法构造的散列表删除结点易实现。
+    ·拉链法也有缺点：当结点规模较小时，用拉链法中的指针域也要占用额外空间，还是开放定址法省空间。
+</code></pre>
+<p> 第十章<br>文件<br>        文件是性质相同的记录的集合。<br>记录是文件中存取的基本单位，数据项是文件可使用的最小单位，数据项有时称字段或者属性。<br>        文件<br>         ·逻辑结构是一种线性结构。<br>        ·操作有：检索和维护。<br>并有实时和批量处理两种处理方式。<br>        文件<br>         ·存储结构是指文件在外存上的组织方式。<br>        ·基本的组织方式有：顺序组织、索引组织、散列组织和链组织。<br>        ·常用的文件组织方式：顺序文件、索引文件、散列文件和多关键字文件。<br>        评价一个文件组织的效率，是执行文件操作所花费的时间和文件组织所需的存储空间。<br>        检索功能的多寡和速度的快慢，是衡量文件操作质量的重要标志。<br>        顺序文件是指按记录进入文件的先后顺序存放、其逻辑顺序和物理顺序一致的文件。<br>主关键字有序称顺序有序文件，否则称顺序无序文件。<br>        一切存储在顺序存储器(如磁带)上的文件都只能顺序文件，只能按顺序查找法存取。<br> 顺序文件的插入、删除和修改只能通过复制整个文件实现。<br>        索引文件的组织方式：通常是在主文件之外建立一张索引表指明逻辑记录和物理记录之间一一对应的关系，它和主文件一起构成索引文件。<br>        索引非顺序文件中的索引表为稠密索引。<br>索引顺序文件中的索引表为稀疏索引。<br>        若记录很大使得索引表也很大时，可对索引表再建立索引，称为查找表。<br>是一种静态索引。<br>        索引顺序文件常用的有两种：</p>
+<pre><code>    ·ISAM索引顺序存取方法：是专为磁盘存取文件设计的，采用静态索引结构。
+</code></pre>
+<p> ·VSAM虚拟存储存取方法：采用B+树作为动态索引结构，由索引集、顺序集、数据集组成。<br> 散列文件是利用散列存储方式组织的文件，亦称为直接存取文件。<br>        散列文件<br>        ·优点是：文件随机存放，记录不需要排序;插入删除方便;存取速度快;不需要索引区，节省存储空间。<br> ·缺点是：不能进行顺序存取，只能按关键字随机存取，且询问方式限地简单询问，需要重新组织文件。<br> 多重表文件：对需要查询的次关键字建立相应的索引，对相同次关键字的记录建一个链表并将链表头指针、长度、次关键字作为索引表的索引项。<br>        倒排表：次关键字索引表称倒排表，主文件和倒排表构成倒排文件。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E5%90%8E%E5%A4%8D%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2021-06-21T01:58:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E5%90%8E%E5%A4%8D%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/">操作系统课后复习题答案</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -175,17 +530,17 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">02326</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">02331</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -198,131 +553,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/06/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8402331-%E8%A6%81%E7%82%B9/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/06/20/2019%E5%B9%B410%E6%9C%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%8802326%EF%BC%89%E7%9C%9F%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2021-06-20T15:19:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-20</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E5%90%8E%E5%A4%8D%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">操作系统课后复习题答案</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/06/20/2019%E5%B9%B410%E6%9C%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%8802326%EF%BC%89%E7%9C%9F%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/">2019年10月操作系统（02326）真题及答案</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自考</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">02326</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/自考//" class="article-tag-list-link color3">自考</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/06/20/%E8%87%AA%E8%80%83%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AE%80%E7%AD%94%E9%A2%982004-2019%E5%B9%B4/" class="archive-article-date">
-  	<time datetime="2021-06-20T14:50:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/06/20/%E8%87%AA%E8%80%83%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AE%80%E7%AD%94%E9%A2%982004-2019%E5%B9%B4/">自考操作系统简答题2004-2019年</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自考</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">02326</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/自考//" class="article-tag-list-link color3">自考</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -346,9 +674,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
